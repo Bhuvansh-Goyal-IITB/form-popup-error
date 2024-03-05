@@ -1,0 +1,46 @@
+{
+  "name": "form-popup-error",
+  "version": "1.0.0",
+  "description": "Easy to use clean looking form error popup component for React.",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Bhuvansh-Goyal-IITB/form-popup-error.git"
+  },
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "type": "module",
+  "files": [
+    "dist"
+  ],
+  "exports": {
+    ".": {
+      "main": "./dist/index.cjs",
+      "require": "./dist/index.cjs",
+      "module": "./dist/index.js",
+      "import": "./dist/index.js",
+      "default": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    }
+  },
+  "scripts": {
+    "build": "tsup"
+  },
+  "keywords": [
+    "react",
+    "error",
+    "form"
+  ],
+  "author": "Bhuvansh Goyal",
+  "license": "MIT",
+  "devDependencies": {
+    "@repo/typescript-config": "workspace:*",
+    "@types/react": "^18.2.61",
+    "react": "^18.2.0",
+    "tsup": "^8.0.2"
+  },
+  "peerDependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  }
+}
