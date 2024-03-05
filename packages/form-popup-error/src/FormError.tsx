@@ -1,12 +1,22 @@
 import { CSSProperties, useEffect, useRef } from "react";
 import React from "react";
 import { FormErrorProps } from "./types";
-import FormErrorItem from "./FormErrorItem";
 
 const style: CSSProperties = {
   position: "relative",
   overflow: "clip",
   transition: "height 100ms ease",
+};
+
+const displayContainerStyle = (hidden: boolean) => {
+  return {
+    position: "absolute",
+    transform: hidden ? "translateY(-105%)" : "translateY(0)",
+
+    transitionProperty: "transform",
+    transitionTimingFunction: "cubic-bezier(0.4, 0, 0.2, 1)",
+    transitionDuration: "150ms",
+  } satisfies CSSProperties;
 };
 
 export const FormError: React.FC<FormErrorProps> = ({
@@ -32,12 +42,9 @@ export const FormError: React.FC<FormErrorProps> = ({
   return (
     <div ref={containerRef} style={style}>
       {errorList.map(({ condition, message }, index) => (
-        <FormErrorItem
-          key={index}
-          showCondition={condition}
-          errorMessage={message}
-          displayComponent={DisplayComponent}
-        />
+        <div key={index} style={displayContainerStyle(!condition)}>
+          <DisplayComponent errorMessage={message} />
+        </div>
       ))}
     </div>
   );
