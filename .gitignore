@@ -37,3 +37,6 @@ yarn-error.log*
 # Misc
 .DS_Store
 *.pem
+
+# Pre Publish
+packages/form-popup-error/README.md
