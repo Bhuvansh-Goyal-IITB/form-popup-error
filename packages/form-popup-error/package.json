@@ -1,7 +1,8 @@
 {
   "name": "form-popup-error",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Easy to use clean looking form error popup component for React.",
+  "readme": "../../README.md",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Bhuvansh-Goyal-IITB/form-popup-error.git"
