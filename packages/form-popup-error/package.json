@@ -1,6 +1,6 @@
 {
   "name": "form-popup-error",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "description": "Easy to use clean looking form error popup component for React.",
   "repository": {
     "type": "git",
@@ -34,6 +34,7 @@
   "author": "Bhuvansh Goyal",
   "license": "MIT",
   "devDependencies": {
+    "@changesets/cli": "^2.27.1",
     "@repo/typescript-config": "workspace:*",
     "@types/react": "^18.2.61",
     "react": "^18.2.0",
